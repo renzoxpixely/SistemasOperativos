@@ -151,7 +151,11 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("Explorador de Archivos");
+        setBackground(new java.awt.Color(0, 0, 0));
         setResizable(false);
+
+        jPanelMenu.setBackground(new java.awt.Color(0, 102, 102));
+        jPanelMenu.setForeground(new java.awt.Color(0, 102, 102));
 
         cerrarSesion.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Shutdown_25px.png"))); // NOI18N
         cerrarSesion.setText("Cerrar Sesion");
@@ -163,6 +167,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
             }
         });
 
+        jButton2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carpeta (5).png"))); // NOI18N
         jButton2.setText("Buscar");
         jButton2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -175,7 +180,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
         Direccion.setBorder(javax.swing.BorderFactory.createEtchedBorder());
         Direccion.setOpaque(true);
 
-        atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Back_25px_1.png"))); // NOI18N
+        atras.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Back_25px_10.png"))); // NOI18N
         atras.setText("Carpeta Superior");
         atras.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -183,28 +188,28 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
             }
         });
 
-        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Edit_25px.png"))); // NOI18N
+        jButton1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carpeta (1).png"))); // NOI18N
         jButton1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton1ActionPerformed(evt);
             }
         });
 
-        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Delete_25px.png"))); // NOI18N
+        jButton3.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carpeta (4).png"))); // NOI18N
         jButton3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton3ActionPerformed(evt);
             }
         });
 
-        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Add_File_25px_1.png"))); // NOI18N
+        jButton4.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/carpeta (2).png"))); // NOI18N
         jButton4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton4ActionPerformed(evt);
             }
         });
 
-        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/icons8_Add_Folder_25px.png"))); // NOI18N
+        jButton5.setIcon(new javax.swing.ImageIcon(getClass().getResource("/Imagenes/crear (1).png"))); // NOI18N
         jButton5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jButton5ActionPerformed(evt);
@@ -212,6 +217,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
         });
 
         usuario.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        usuario.setForeground(new java.awt.Color(255, 255, 255));
         usuario.setHorizontalAlignment(javax.swing.SwingConstants.RIGHT);
 
         javax.swing.GroupLayout jPanelMenuLayout = new javax.swing.GroupLayout(jPanelMenu);
@@ -257,7 +263,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
                         .addComponent(Direccion, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                         .addComponent(TextoBuscar, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
             .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanelMenuLayout.createSequentialGroup()
-                .addContainerGap(17, Short.MAX_VALUE)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(usuario, javax.swing.GroupLayout.PREFERRED_SIZE, 17, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addContainerGap())
         );
@@ -313,6 +319,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
         carpeta.setMinimumSize(new java.awt.Dimension(45, 45));
         carpeta.setPreferredSize(new java.awt.Dimension(45, 45));
 
+        Elementos.setBackground(new java.awt.Color(0, 0, 0));
         Elementos.setText(" ");
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
@@ -329,7 +336,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
                         .addComponent(carpeta, javax.swing.GroupLayout.PREFERRED_SIZE, 45, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addGap(18, 18, 18)
                         .addComponent(Elementos, javax.swing.GroupLayout.PREFERRED_SIZE, 236, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+                        .addContainerGap(895, Short.MAX_VALUE))
                     .addGroup(layout.createSequentialGroup()
                         .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 240, javax.swing.GroupLayout.PREFERRED_SIZE)
                         .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
@@ -350,7 +357,7 @@ public class InterfazExplorador extends javax.swing.JFrame implements MouseListe
                 .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(carpeta, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(Elementos, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addContainerGap(16, Short.MAX_VALUE))
+                .addContainerGap(17, Short.MAX_VALUE))
         );
 
         pack();
